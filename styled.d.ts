@@ -16,7 +16,27 @@ declare module 'styled-components' {
             start: string,
             end: string,
             center: string,
-        }
+        };
+        breakpoints: {
+            xsmall: string,
+            small: string,
+            medium: string,
+            large: string,
+            xlarge: string,
+        },
+        columnWidths: {
+            fluid: string;
+            content: string;
+            "1/2": string;
+            "1/3": string;
+            "2/3": string;
+            "1/4": string;
+            "3/4": string;
+            "1/5": string;
+            "2/5": string;
+            "3/5": string;
+            "4/5": string;
+        },
         colors: {
             primary1: {
                 10: string,

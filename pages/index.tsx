@@ -11,6 +11,8 @@ import { Aside } from "../components/Aside";
 import { Center } from "../components/Center";
 import { Cluster } from "../components/Cluster";
 import { Columns } from "../components/Columns";
+import { Column } from "../components/Column";
+import { Tiles } from "../components/Tiles";
 
 const Home: NextPage = () => {
   return (
@@ -41,9 +43,23 @@ const Home: NextPage = () => {
           </ul>
         </Aside>
         <Center as={"main"}>
-          <Box>
-            <Columns spacing="small"></Columns>
-          </Box>
+          <Columns spacing="medium">
+            <Column width="1/2">
+              <Stack spacing="small">
+                <Box>Something</Box>
+                <Box>Something</Box>
+                <Box>Something</Box>
+              </Stack>
+            </Column>
+            <Column width="content">
+              <h1>Hello</h1>
+            </Column>
+          </Columns>
+          <Tiles width="1/3" spacing="xsmall">
+            <Box>Hello</Box>
+            <Box>Hello</Box>
+            <Box>Hello</Box>
+          </Tiles>
           <Stack spacing={"small"} justify="center">
             <Button variation="primary">What up</Button>
             <Box>What up</Box>

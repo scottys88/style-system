@@ -3,6 +3,7 @@ import { DefaultTheme } from "styled-components";
 export type Spacing = keyof DefaultTheme["spacing"];
 export type Align = keyof DefaultTheme["align"];
 
+
 const myTheme: DefaultTheme = {
     borderRadius: '0.6rem',
     spacing: {
@@ -16,6 +17,26 @@ const myTheme: DefaultTheme = {
         start: 'start',
         end: 'end',
         center: 'center',
+    },
+    columnWidths: {
+        fluid: "fluid",
+        content: "content",
+        "1/2": "50%",
+        "1/3": "33%",
+        "2/3": "66%",
+        "1/4": "25%",
+        "3/4": "75%",
+        "1/5": "20%",
+        "2/5": "40%",
+        "3/5": "60%",
+        "4/5": "80%",
+    },
+    breakpoints: {
+        xsmall: "375px",
+        small: "768px",
+        medium: "996px",
+        large: "1200px",
+        xlarge: "1400px",
     },
     colors: {
         primary1: {
